@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+fieldset{
+  padding: 20px;
+  border:2px dotted #947394;
+}
+
+legend{
+  color: 947394;
+}
+
+head, body{
+  color: #4b7d95;background-color: 		#acd7d8;
+  font-family: Gill Sans, sans-serif;
+}
