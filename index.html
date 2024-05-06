@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Mental Health Check In</h1>
+    <p id="description">This is a short form to fill out before your therapy appointments so that your therapist has an idea of how your week went before your session. If you need immediate assistance please contact (123) 456-7890. </p>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Identification </legend>
+      <label for="name" id="name-label">Enter name: <input id="name" type="text" placeholder="Bob" required /></label>
+      <label for="email" id="email-label">Enter email: <input id="email" type="email" placeholder="freeCodeCamp@gmail.com" required /></label>
+      <label for="number" id="number-label">Enter patient number: <input id="number" type="number" min=0 max=1000 placeholder="1234"/></label>
+      </fieldset>
+      <fieldset>
+        <legend>Care Provider Name </legend>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+            <option value="1">Dr. Red MD</option>
+            <option value="2">Dr. Green MD</option>
+            <option value="3">Dr. Blue MD</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Gender </legend>
+        <label for="non-binary"><input id="non-binary" type="radio" name="gender" class="inline" value="non-binary" checked /> Non-binary </label> 
+        <label for="woman"><input id="woman" type="radio" name="gender" class="inline"  value="woman" /> Woman </label>
+        <label for="man"><input id="man" type="radio" name="gender" class="inline" value="man" /> Man</label>
+      </fieldset>
+      <fieldset>
+        <legend>Description </legend>
+        <label><input class="inline" id="excited" type="checkbox" required name="excited" value=unchecked /> Excited
+      </label>
+      <label><input class="inline" id="sad" type="checkbox" required name="sad" value=unchecked /> Sad
+      </label>
+      <label><input class="inline" id="happy" type="checkbox" required name="happy" value=unchecked /> Happy
+      </label>
+      <label><input class="inline" id="angry" type="checkbox" required name="angry" value=unchecked /> Angry
+      </label>
+      <label><input class="inline" id="embarrased" type="checkbox" required name="embarrased" value=unchecked /> Embarrased
+      </label>
+      <label><input class="inline" id="distressed" type="checkbox" required name="distressed" value=unchecked /> Distressed
+      </label>
+       </fieldset>
+       <fieldset>
+         <label for="comments">Additional Comments:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="My week was..."></textarea>
+        </label>
+      </fieldset> 
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
